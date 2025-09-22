@@ -46,7 +46,16 @@
  -->
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
-    <script type="text/babel">
+    <script type="text/babel"> // this tells bable to translate the JSX into JS
+
+      const button = <button>Hello</button> 
+    //   If we use DOM in our normal JS, instead of JSX, we use document.createElement and then use .innerHTML.
+    // When using React we use JSX instead of normal JS
+
+    // Problem with JSX:
+    //  - Our web-browser doesn't understand JSX 
+    //  - Need to translate JSX into JS, that's why we use 'bable ext lib'
+
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
     </script>
@@ -56,5 +65,14 @@
 - To setup react we have to give it an HTML element. 
 - Then we use, .render(), it means to display something, so it let's us display something inside that container
       -->
+<!-- What is babel ext lib :
+ - A JS Compiler
+ - Translate other languages into JS
+ - Why babel is needed ?
+    - When using react, we don't use normal JS, we use an enhanced version of JS called JSX
+
+    - JSX : JavaScript XML
+        - It's same as JS, but we can write HTML directly in our JS code.
+  -->
   </body>
 </html>
