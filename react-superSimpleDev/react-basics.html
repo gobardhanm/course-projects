@@ -33,7 +33,8 @@
 
   </head>
   <body>
-    <div class="js-container"></div>
+    <div class="js-container"></div>  
+    <!-- a div is a container -->
 
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
@@ -48,7 +49,12 @@
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel"> // this tells bable to translate the JSX into JS
 
-      const button = <button>Hello</button> 
+      const div = (
+        <div>
+            <button>Hello</button>
+            <p>This is a paragraph text.</p>
+        </div>
+      );
     //   If we use DOM in our normal JS, instead of JSX, we use document.createElement and then use .innerHTML.
     // When using React we use JSX instead of normal JS
 
@@ -57,7 +63,7 @@
     //  - Need to translate JSX into JS, that's why we use 'bable ext lib'
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
+      ReactDOM.createRoot(container).render(div);
     </script>
     <!-- To setup React :
 
@@ -75,4 +81,19 @@
         - It's same as JS, but we can write HTML directly in our JS code.
   -->
   </body>
+
+<!-- 
+Notes:
+
+- How react as an ext lib, helps us create website easier ?
+
+  - Creating a website with React feels natural, it's lot easier than using the DOM featur in JS.
+  - JSX lets us find errors easier. 
+  - We can insert values insite JSX. Ex: in <p>Two plus two equals {2 + 2}</p> . It's same as 'String interpolation'.
+  - 
+
+
+-->
+
+
 </html>
