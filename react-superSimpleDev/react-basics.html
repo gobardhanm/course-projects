@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+
+
+    <!-- What is React ?
+- *external library* that *helps us* *create websites easier*.
+- HTML code : creates a website
+- How do we load JS onto our website ?
+	- by using \<script> and write inside it.
+	- or save JS in a file and load JS via script tag and src attribute.
+	- script element can load JS from any src on the internet. (It does not have to local only) -> This is called external library (which is outside of our computer), code that someone else wrote and we are just loading it.
+- To load *React* in our project:
+```
+<script src="https://---/react.js"></script>
+<script src="https://---/react-dom.js"></script>
+```
+
+- Why are there 2 external library for React ? (react.js & react-dom.js)
+	- React can be used in different places like:
+		- Websites
+		- Mobile Apps
+	- React : have shared feature for both Mobile Apps and Websites
+	- React-DOM : contain features specific to website
+
+- So, to use React to create Websites :
+	- load React & ReactDOM
+- And, to use React to create Mobile Apps:
+	- load React & ReactNative
+ -->
+
+
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <!-- DOM (Document Object Model) :
+
+- *document*.querySelector ( a feature of DOM )
+- JS give us the document object which sort of combine JS and HTML together.
+- It let's us put HTML element in JS and control HTML via JS.
+ -->
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
+    </script>
+    <!-- To setup React :
+
+- ReactDOM.createRoot(container ) : sets up React.
+- To setup react we have to give it an HTML element. 
+- Then we use, .render(), it means to display something, so it let's us display something inside that container
+      -->
+  </body>
+</html>
