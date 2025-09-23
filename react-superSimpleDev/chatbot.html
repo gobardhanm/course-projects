@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Chatbot</title>
+  </head>
+  <body>
+    <div class="js-container"></div>  
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+
+      function ChatInput(){
+        return(
+          <>
+            <input placeholder="Send a message to ChatBot" size= "30" />
+            <button>Send</button>  
+          </>
+        );
+      }
+      //function ChatMsg (props) , shortcut below
+      function ChatMsg ({message, sender}){
+        // const msg = props.message;
+        // const { message, sender } = props; // same as above line, called Destructuring
+        // const sender = props.sender;
+
+        if(sender == 'robot'){
+          return(
+            <div>
+              <img src="user.png" alt="" width="50"/>
+              {message}  
+            </div>
+          );
+        }
+
+        return(
+          <>
+            <div>
+              {message}
+              <img src="user.png" alt="" width="50"/>  
+            </div>
+          </>
+        );
+      }
+
+
+      const app = (
+        <>
+          <ChatInput />
+          <ChatMsg message="hello chatbot" sender="user"/>
+          <ChatMsg message="Hello! How can I help you ?" sender="robot"/>
+          <ChatMsg message="can you get me todays date ?"sender="user"/>
+          <ChatMsg message="Today is September 23" sender="robot"/>
+        </>
+      );
+      
+      const container = document.querySelector('.js-container');
+      const root = ReactDOM.createRoot(container);
+      root.render(
+        app
+      );
+    </script>
+  </body>
+  <!--
+  Notes:
+  1. Componentsd:
+    - a piece of the website.
+    When building a website:
+      - It's better to split up the website into pieces.
+      - So, we can work on a small piece of the website at a time.
+    - The component name "MUST" start with a capital letter (PascalCase).
+    - JSX is more strict than normal HTML, All elements need a closing tag. Like: <input></input> or we can do: <input/> 
+    
+    - React has a special syntax we can use to insert "Components". Ex: Instead of {ChatInput()} -> <ChatInput></ChatInput> or <ChatInput /> (This is called the "Component Syntax")
+      - We can use it as our own HTML element. This was one of the main idea of "React".
+
+    - To remove the nesting div, React has another way to group element together : Called a "Fragment" ( <></> )
+
+    - Components are designed to be re-usable
+
+
+  Props:
+    - We can add our own attribute in Component element, and to access it inside the Component we use a feature called: "Props".
+    - Props contain the attributes we have given.
+    - Props short for Properties
+    - Props make our "Components" reuseable.
+
+
+
+
+
+    - "size" let us set how many char we want in that field
+
+
+   -->
+</html>
