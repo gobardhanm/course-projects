@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Chatbot</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      function ChatInput() {
+        return (
+          <>
+            <input
+              placeholder="Send a message to ChatBot"
+              size="30"
+              id="input-field"
+            />
+            <button>Send</button>
+          </>
+        );
+      }
+
+      function ChatMsg({ message, sender }) {
+        return (
+          <>
+            <div>
+              {sender === "robot" && <img src="robot.png" alt="" width="50" />}
+              {message}
+              {sender === "user" && <img src="user.png" alt="" width="50" />}
+            </div>
+          </>
+        );
+      }
+
+      function ChatMessages() {
+        const [chatMessages, setChatMessages] = React.useState([
+          {
+            message: "hello chatbot",
+            sender: "user",
+            id: "id0",
+          },
+          {
+            message: "Hello! How can I help you ?",
+            sender: "robot",
+            id: "id1",
+          },
+          {
+            message: "can you get me todays date ?",
+            sender: "user",
+            id: "id2",
+          },
+          {
+            message: "Today is September 22",
+            sender: "robot",
+            id: "id3",
+          },
+        ]);
+
+        // const chatMessages = array[0]; // current data
+        // const setChatMessages = array[1]; //new data as per function
+
+        //Array Destructuring of the above codes
+        // const [chatMessages, setChatMessages] = array; <- We can even put it directly in the use state
+
+        function sendMessage() {
+          setChatMessages([
+            ...chatMessages,
+            {
+              message: "test",
+              sender: "user",
+              id: crypto.randomUUID(),
+            },
+          ]);
+        }
+
+        return (
+          <>
+            <button onClick={sendMessage}>Send Message</button>
+            {chatMessages.map((chatMessage) => {
+              return (
+                <ChatMsg
+                  message={chatMessage.message}
+                  sender={chatMessage.sender}
+                  key={chatMessage.id}
+                />
+              );
+            })}
+          </>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <ChatInput />
+            <ChatMessages />
+          </>
+        );
+      }
+
+      const container = document.querySelector(".js-container");
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
+  <!--
+  Notes: < State and Event Handlers, Create the Chatbot Features >
+
+  - State and Event Handlers:
+    - Using curly braces we can use any JS code inside
+
+    - react.js:201 Warning: Each child in a list should have a unique "key" prop
+    - In react if we insert an array of component, we need to give each component
+        a prop called "key".
+    - The "key" helps react track changes in the array.
+    - This key has to be unique.
+====================================================================
+   - Event Handler:
+    - It lets us run a function when we interact with the website
+    - onClick = runs a function we click
+    - {} : lets us save any type of value in a prop (incl. a func)
+
+    - We updated the date and added a new chat using .push() but still
+     it doesn't show in the website with chatMessageComponent.
+    - To fix this we are going to learn "State"
+========================================================================
+  - State:
+    - Its the data that is connected to the HTML 
+      When we update this data, it will update the HTML.
+      
+      Let's Convert the Chat messages into "State"
+
+    - React.useState([]) : It returns an array.
+
+    - const array = React.useState([]),
+      array[0] : gives the current value of chatMessages (The current data)
+      array[1] : Function that updates the data
+
+    - In react we should not update the data directly, If we update the 
+      data directly react will not update the HTML.
+      - It is also known as "Updater func".
+
+    - In react, we should not modify the data directly, We should 
+    always create a "copy" and then modify the "copy".
+    (This helps React be more efficient.)
+
+    - "..." (Spread Operator), takes a value in an array, and copies them 
+    into a new array.
+   
+    - we should use "Updater func" to update the data, 
+    React will update the HTML
+
+=====================================================
+  Taking input in message box:
+    - React best practice is not to use the DOM manually
+      (React is managing the website, It might interfere with react)
+      Instead we should use, react features
+
+    - "onChnage" event : 
+
+   -->
+</html>

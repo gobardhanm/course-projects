@@ -1,0 +1,4 @@
+ - React.useState([]) : It returns an array.
+    - const array = React.useState([]),
+      array[0] : gives the current value of chatMessages (The current data)
+   
