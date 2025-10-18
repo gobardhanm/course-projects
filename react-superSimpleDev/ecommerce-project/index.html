@@ -33,5 +33,17 @@
       - There are some shortcuts :
         - path='/' which is used for homepage, we can just write index.
         - We can use self-closing in Route components.
+
+  =====================================================================================
+    > When we click a link it reload the pages, as it was a multipages project,
+     by default <a/> (link el) reloads the page
+      
+     - So, now we are using Routing, a SPA, we don't need to reload everytime, we can use JS
+      to switch b/w pages.
+      - To do this react-router provide a component called "<link>", it uses a prop "to", 
+        instead of href of <a/>
+
+    - When using react-router we should use <Link> instead of <a>
+    - <Link> goes to another page without loading
   -->
 </html>
