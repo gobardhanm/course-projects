@@ -10,9 +10,10 @@ import axios from "axios";
 function App() {
   const [cart, setCart] = useState([]);
   useEffect(() => {
-    axios.get("/api/cart-items/").then((response) => {
+    axios.get("/api/cart-items?expand=product").then((response) => {
       setCart(response.data);
     });
+    //query parameter is added ("?")
   }, []);
   return (
     <Routes>
@@ -25,3 +26,6 @@ function App() {
 }
 
 export default App;
+
+// Query Parameter:
+// - lets us add additional info to our request.
