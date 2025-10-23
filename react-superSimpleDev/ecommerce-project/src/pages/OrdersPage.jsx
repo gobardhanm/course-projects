@@ -1,10 +1,10 @@
 import Header from "../components/Header";
 import "./OrdersPage.css";
 
-function OrdersPage() {
+function OrdersPage({ cart }) {
   return (
     <>
-      <Header />
+      <Header cart={cart} />
 
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
