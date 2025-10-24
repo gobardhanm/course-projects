@@ -86,7 +86,30 @@
       - with .post(), we give it another value, a object, this is called the request body.
       - backend needs to know 2 things in order to add a object, here productId, quantity.
 
+- Type of Requests :
+    - .get(url-path) : sends GET and /api/cart-items
+
+    - It sends 2 pieces of information:
+     1. Type of Request
+     2. URL path
+
+    - .post(url-path) :
+      - This sends :
+        1. Type: POST
+        2. URL Path : /api/cart-items
+
+    - The type is also called "HTTP" methods.
+
+    - There are 4 types mainly:
+        - GET : gets some data
+        - POST : create some data
+        - PUT : update some data
+        - DELETE : delete some data
+
 ========================================================================================
 - Issues and Resolutions:
 1. Updating all product quantity -> separated it into a new component.
+
+
+--- 8:33 ---
   -->
