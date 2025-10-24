@@ -66,4 +66,27 @@
     - async function returns a promise,but we should not return a promise inside useEffect,
       that's why we use, variables, or create another async func inside useEffect and put it 
       in a variable.
+
+- In this lession (7):
+
+    1. Backend : manages the data
+    2. Setup a backend for our project
+    3. Data fetching
+    4. axios : easier way to make requests to the backend
+    5. Generate HTML using data from the backend
+    6. Separated into smaller components
+    7. Async Await : write asynchronous code like normal code
+
+========================================================================================
+- Lession 8:
+
+- Data Mutation and Types of Requests : 
+    - axios.get() : gets us data from the backend.
+    - axios.post() : create data in the backend.
+      - with .post(), we give it another value, a object, this is called the request body.
+      - backend needs to know 2 things in order to add a object, here productId, quantity.
+
+========================================================================================
+- Issues and Resolutions:
+1. Updating all product quantity -> separated it into a new component.
   -->
