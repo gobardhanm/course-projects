@@ -33,7 +33,7 @@ function Product({ product, loadCart }) {
         </div>
       </div>
 
-      <div className="product-price">${formatMoney(product.priceCents)}</div>
+      <div className="product-price">{formatMoney(product.priceCents)}</div>
 
       <div className="product-quantity-container">
         <select value={quantity} onChange={selectQuantity}>

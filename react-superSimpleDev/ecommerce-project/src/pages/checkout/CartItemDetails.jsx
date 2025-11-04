@@ -4,7 +4,7 @@ import DeliveryOptions from "./DeliveryOptions";
 
 function CartItemDetails({ cartItem, deliveryOptions, loadCart }) {
   const deleteCartItem = async () => {
-    await axios.delete(`/apt/cart-items/${cartItem.productId}`);
+    await axios.delete(`/api/cart-items/${cartItem.productId}`);
     await loadCart();
   };
   return (
