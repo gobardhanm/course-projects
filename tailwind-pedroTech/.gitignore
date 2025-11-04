@@ -1,0 +1,37 @@
+node_modules/
+dist/
+build/
+/.parcel-cache/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Mac Finder tags
+.AppleDouble
+
+# Generated Tailwind output (if you put built CSS in project root)
+*.css.map
+
+# Optional lockfiles
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

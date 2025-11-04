@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-background: #ffffff;
+  --color-primary: #1f2937;
+}
+
+.dark,
+.dark * {
+  --color-background: #0b1220;
+  --color-primary: #e5e7eb;
+}
+
+/* 
+There are few layers in Tailwind CSS.
+
+  1. base: h1, img, button
+
+  2. components: multiple css properties
+
+  3. utilities: single styling, like in-build styles.
+ */
