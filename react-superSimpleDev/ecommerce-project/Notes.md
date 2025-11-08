@@ -111,5 +111,25 @@
 1. Updating all product quantity -> separated it into a new component.
 
 
---- 8:33 ---
+========================================================================================
+
+Lession: 8 
+
+  1. Data mutation : update data in the backend
+  2. Types of requests: GET, POST, PUT, DELETE
+  3. POST request : add product to the cart, create an order
+  4. PUT request : update the cart
+  5. DELETE request : delete a product from a cart 
+  6. Dependency Array : to update the payment summary in useEffect 
+  7. useNavigate : navigate to another page using our code
+
+
+========================================================================================
+
+Lession 9 : Automated Tests in React with Vitest (Jest is also a popular testing package)
+  
+  - There are many ways to run tests:
+    1. Unit Tests : test 1 unit or 1 piece of the code
+    
+    2. 
   -->
