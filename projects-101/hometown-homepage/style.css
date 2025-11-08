@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+img{
+    width: 100px;
+}
+#hero{
+    background: url("images/bargarh.jpg");
+    background-size: cover;
+    height: 343px;
+    max-width: 720;
+    margin-top: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hero-heading{
+    background: #1D3557;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 150px;
+    margin-bottom:8px;
+}
+#hero-subheading{
+    margin-top: 8px;
+    background: #457B9D;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+#activities{
+    background: #F1FAEE;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+#imag{
+    border-radius: 50%;
+    height: 70px;
+}
+.activities-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* #dhanuyatra{
+    margin: 0 40px;
+}
+#aapkhol{
+    margin-left: 15px;
+} */
+#nrushingnath{
+    margin-right: 0px;
+}
+
+/* Guide Section */
+
+#guide{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+    background: #A8DADC;
+    border-bottom: 8px #1D3557 solid;
+    border-radius: 10px;
+}
+#guide-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+#guide-description{
+    margin: 15px;
+}
+footer{
+    margin-top: 10px;
+    background-color: #F1FAEE;
+    padding: 1px;
+}
