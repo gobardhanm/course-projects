@@ -140,4 +140,30 @@ Lession 9 : Automated Tests in React with Vitest (Jest is also a popular testing
       - vi.fn() : creates a fake function.
 
       - "screen" from the testing-react lib. lets us check the fake web page.
+
+  - Test Hooks :
+    - beforEach() : restore the data before each tests
+    - afterEach() 
+    - beforeAll()
+    - afterAll()
+
+  > Mocks don't do anything.
+
+
+  ===============================================================================
+
+  Mock the Implementation :
+
+    - Means, we make the mock do whatever we want.
+
+    - MemoryRouter : specifically for testing.
+
+    Summary:
+      - Automated Tests with Vitest
+      - Unit tests : tests 1 piece of the code
+      - it(), expect(), describe()
+      - Integration tests : tests multiple pieces of code
+      - Test a components (using render and screen)
+      - Mock : fake version of a function / package
+      - Mock the Implementation : make a mock do whatever we want
   -->
