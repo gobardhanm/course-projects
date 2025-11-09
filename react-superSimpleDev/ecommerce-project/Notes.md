@@ -173,4 +173,34 @@ Lession 9 : Automated Tests in React with Vitest (Jest is also a popular testing
   Deployment:
     - AWS (Amazon Web Servies)
       - A collection of services that helps us put stuff on the internet.
+
+    Summary:
+      - AWS
+      - EC2 : rent computer from AWS (IaaS)
+      - Elastic Beanstalk : sets up all software (PaaS)
+      - Put our backend on the internet
+      - Build and optimize the frontend, put it on the internet
+      - How to deploy React without backend
+      - Added load-balancer and database
+      - Set up domain name, SSL certificate, and HTTPS
+      - Learned about "vite build- dist folder"
+
+=====================================================================================
+TypeScript: JavaScript with extra features
+  - Type checking: Verifying that variables and expressions match their declared types.
+                   Ensures that variables and expressions conform to their declared types.
+  - Type inference: Automatically determining the type of a variable or expression based on its value or usage.
+                    Automatically deduces types when they aren’t explicitly specified.
+
+  - Type Alias : works like a variable, but for types
+
+
+  Ex: 
+
+  let age: number = "20"; // ❌ Error: Type 'string' is not assignable to type 'number'
+
+  let age = 20; // ✅ TypeScript infers 'age' as number automatically
+
+
+
   -->
