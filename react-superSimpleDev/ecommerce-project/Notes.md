@@ -131,5 +131,13 @@ Lession 9 : Automated Tests in React with Vitest (Jest is also a popular testing
   - There are many ways to run tests:
     1. Unit Tests : test 1 unit or 1 piece of the code
     
-    2. 
+    2. Integration Tests: test multiple units of code working together
+      - While testing a function we run the function.
+      - While testing a component we render the component.
+
+      - We do not directly contact the backend, we "Mock".
+      - Mock : create a fake version of this function
+      - vi.fn() : creates a fake function.
+
+      - "screen" from the testing-react lib. lets us check the fake web page.
   -->
