@@ -166,4 +166,11 @@ Lession 9 : Automated Tests in React with Vitest (Jest is also a popular testing
       - Test a components (using render and screen)
       - Mock : fake version of a function / package
       - Mock the Implementation : make a mock do whatever we want
+
+
+  ===============================================================================
+
+  Deployment:
+    - AWS (Amazon Web Servies)
+      - A collection of services that helps us put stuff on the internet.
   -->

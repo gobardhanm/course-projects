@@ -15,6 +15,9 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: "./ecommerce-backend/dist",
+  },
 });
 
 // Server-Proxy Config
