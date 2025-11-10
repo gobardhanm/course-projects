@@ -7,11 +7,11 @@ This repository is a collection of my coding journey — from writing my very fi
 
 ## 🌱 What You’ll Find Here
 
-- 💻 **Mini Projects & Experiments** — small but powerful programs exploring core programming concepts.  
-- 🌐 **Front-End Projects** — crafted using HTML, CSS, JavaScript, and React.  
-- ⚙️ **Back-End Adventures** — diving into APIs, databases, and server-side logic.  
-- 🧩 **Full-Stack Builds** — bringing everything together in complete, functional web applications.  
-- 🧠 **Learning Notes** — my takeaways, code snippets, and lessons learned along the way.  
+- 💻 **Mini Projects & Experiments** : small but powerful programs exploring core programming concepts.  
+- 🌐 **Front-End Projects** : crafted using HTML, CSS, JavaScript, and React.  
+- ⚙️ **Back-End Adventures** : diving into APIs, databases, and server-side logic.  
+- 🧩 **Full-Stack Builds** : bringing everything together in complete, functional web applications.  
+- 🧠 **Learning Notes** : my takeaways, code snippets, and lessons learned along the way.  
 
 ---
 
