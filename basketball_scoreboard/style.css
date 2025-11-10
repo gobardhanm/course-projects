@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background: turquoise;
+    background-image: url(image/basketball.jpg);
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 70px;
+    background: #1B244A;
+    margin: 70px 10vw;
+}
+
+.first-container{
+    text-align: center;
+    margin-top: 70px;
+    background: #1B244A;
+    margin: 70px 10vw;
+    padding-bottom: 25px;
+    opacity: 95%;
+}
+
+#heading{
+    margin-top: 70px;
+    margin-bottom: 21px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#counter-home , #counter-guest{
+    background: #080001;
+    color:#F94F6D;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    margin-top: 20px ;
+    margin-bottom: 35px;
+    border-radius: 5px;                                                    
+}
+button{
+    width: 45px;
+    height: 45px;
+    /* margin-bottom: 70px; */
+    background: #1B244A;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    margin: auto 2.5px;
+    margin-bottom: 1px;
+}
+
+#new-game-btn{
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    border-radius: 3px;
+    background: turquoise;
+    color: #080001;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/* .lead{
+    color: #9AABD8;
+} */
