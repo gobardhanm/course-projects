@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    font-family: 'Source Sans Pro';
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+/*  header layout */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff ;
+    height: 67px;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.logo-img{
+    width: 147px;
+    height: 63px;
+    margin: auto 5px;
+}
+
+.user-img{
+    border-radius: 50%;
+    height: 34px;
+    margin: auto 10px;
+}
+
+/* body layout */
+
+.post{
+    background: #ffffff;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.post-head{
+    display: flex;
+    background: #ffffff;
+}
+
+.avatar-img{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 10px auto;
+    margin-left: 10px;
+}
+
+.name-add{
+    margin: 12px 0 12px 7px;
+    font-size: 13px;
+    line-height: 16.3px;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.add{
+    font-weight: 400;
+}
+
+.the-post{
+    height: 375px;
+    max-width: 375px;
+}
+
+.icons{
+    display: flex;
+    padding: 0;
+    height: 23.3px;
+    margin: 8px 0px 10px 10px;
+}
+
+.comment-btn{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.likes{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.username{
+    font-weight: bold;
+    margin-left: 0px;
+    margin-top: 12px;
+}
+
+
+/* typography */
+
+p{
+    margin: 0;
+    margin-left: 15px;
+}
+
+/* effects */
+
+.like-btn:hover,
+.comment-btn:hover,
+.share-btn:hover{
+    opacity: 50%;
+}
